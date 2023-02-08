@@ -7,12 +7,14 @@ import app.foot.controller.rest.mapper.PlayerScorerRestMapper;
 import app.foot.controller.validator.GoalValidator;
 import app.foot.service.MatchService;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @AllArgsConstructor
+@Builder
 public class MatchController {
     private final MatchService service;
     private final GoalValidator validator;
